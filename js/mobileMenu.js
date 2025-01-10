@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
             mobileMenu.style.display = 'none';
             switch(item.textContent.trim()) {
                 case 'Home':
-                    window.location.href = './home.html';
+                    window.location.href = './index.html';
                     break;
                 case 'Project':
                     window.location.href = './projects.html';
