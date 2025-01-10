@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./style/project.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+    />
+  </head>
+  <body>
+    <!-- Desktop Layout -->
+    <div class="desktop-project" id="desktopProject">
+      <img class="gradient-icon" alt="" src="./images/Gradient (1).svg" />
+      <div class="desktop-project-child"></div>
+      <div class="desktop-project-item"></div>
+      <div class="desktop-project-inner"></div>
+      <img class="image-3-icon" alt="" src="./images/image 3.png" />
+      <div class="a-dynamic-web-based">
+        A dynamic web-based project utilizing HTML, CSS, JavaScript and so on to
+        streamline blood bank operations. The system includes features such as
+        donor registration and management, automated inventory tracking with
+        expiry alerts, and hospital request handling. With role-based
+        authentication, automated notifications, and insightful analytics, this
+        project ensures efficiency and reliability in managing blood donations
+        and inventory
+      </div>
+      <div class="a-python-based-to-do">
+        A Python-based to-do list application that allows users to create, edit,
+        and delete tasks. The project features a simple command-line interface
+        and built-in timers to help users manage their time effectively and stay
+        on track with their tasks
+      </div>
+      <div class="a-simple-yet">
+        A simple yet powerful note-taking application built with HTML, CSS and
+        JavaScript. This project allows users to create, edit, organize, and
+        delete notes effortlessly. With added features like data persistence for
+        saving notes and a search functionality, it ensures quick access to
+        important information. Perfect for personal organization and
+        productivity
+      </div>
+      <div class="example-project">Example Project</div>
+      <div class="featured-project">Featured Project</div>
+      <img class="image-1-icon" alt="" src="./images/image 2 (1).png " />
+      <img class="image-2-icon" alt="" src="./images/image 4.png " />
+      <div class="nav-bar">
+        <a href="./certificates.html" class="certificate" id="certificateText">Certificate</a>
+        <a href="./projects.html" class="project" id="projectText">Project</a>
+        <a href="./about.html" class="about" id="aboutText">About</a>
+        <a href="./contact.html" class="contact" id="contactText">Contact</a>
+        <a href="./home.html" class="home" id="homeText">Home</a>
+        <img
+          class="image-removebg-preview-1-icon"
+          alt=""
+          src="./images/LOGO-removebg-preview (2).png"
+          id="imageRemovebgPreview1"
+        />
+      </div>
+    </div>
+
+    <!-- Mobile Layout -->
+    <div
+      class="phone-about-me-portrait"
+      id="phoneAboutMe"
+      style="display: none"
+    >
+      <img class="gradient-icon" alt="" src="./images/Gradient (1).svg" />
+      <div class="rectangle-parent">
+        <div class="group-child"></div>
+        <div class="a-dynamic-web-based">
+          A dynamic web-based project utilizing HTML, CSS, JavaScript and so on
+          to streamline blood bank operations. The system includes features such
+          as donor registration and management, automated inventory tracking
+          with expiry alerts, and hospital request handling. With role-based
+          authentication, automated notifications, and insightful analytics,
+          this project ensures efficiency and reliability in managing blood
+          donations and inventory
+        </div>
+        <img class="image-4-icon" alt="" src="./images/image 4.png" />
+      </div>
+      <div class="example-project">Example Project</div>
+      <div class="featured-project">Featured Project</div>
+      <div class="menuvariant3-parent">
+        <img
+          class="menuvariant3-icon"
+          alt=""
+          src="./images/Variant3.svg"
+          id="menuVariant3Icon"
+        />
+        <div class="mobile-menu" id="mobileMenu">
+          <div class="menu-item">Home</div>
+          <div class="menu-item">Project</div>
+          <div class="menu-item">About</div>
+          <div class="menu-item">Contact</div>
+          <div class="menu-item">Certificate</div>
+        </div>
+        <img
+          class="nav-bar-phone-icon"
+          alt=""
+          src="./images/LOGO-removebg-preview (2).png"
+        />
+      </div>
+    </div>
+
+    <script>
+      function toggleLayout() {
+        const desktopLayout = document.getElementById("desktopProject");
+        const mobileLayout = document.getElementById("phoneAboutMe");
+
+        if (window.innerWidth >= 780) {
+          desktopLayout.style.display = "block";
+          mobileLayout.style.display = "none";
+        } else {
+          desktopLayout.style.display = "none";
+          mobileLayout.style.display = "block";
+        }
+      }
+
+      // Attach the function to the resize event
+      window.addEventListener("resize", toggleLayout);
+
+      // Call the function once on page load
+      toggleLayout();
+    </script>
+    <script src="./js/mobileMenu.js"></script>
+  </body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+
+    <link rel="stylesheet" href="./style/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Preahvihear:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="desktop-content">
+
+      <img class="gradient-icon" alt="Gradient background" src="./images/Gradient (1).svg" />
+
+      <nav class="nav-bar">
+        <a href="./home.html">
+          <div class="home">Home</div>
+        </a>
+        <a href="./about.html">
+          <div class="about">About</div>
+        </a>
+        <a href="./projects.html">
+          <div class="project">Project</div>
+        </a>
+        <a href="./certificates.html">
+          <div class="certificate">Certificate</div>
+        </a>
+        <a href="./contact.html">
+          <div class="contact">Contact</div>
+        </a>
+        <img
+          class="image-removebg-preview-1-icon"
+          alt="Logo"
+          src="images/LOGO-removebg-preview (2).png"
+        />
+      </nav>
+
+      <main>
+        <h1 class="contact-me">Contact Me</h1>
+
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              placeholder="Enter your full name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Write your message here..."
+              required
+            ></textarea>
+          </div>
+
+          <div class="button-container">
+            <button type="submit" class="submit-button">
+              Send
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+        </form>
+      </main>
+    </div>
+
+    <div class="menuvariant3-parent">
+        <img
+          class="menuvariant3-icon"
+          alt=""
+          src="./images/Variant3.svg"
+          id="menuVariant3Icon"
+        />
+        <div class="mobile-menu" id="mobileMenu">
+          <div class="menu-item">Home</div>
+          <div class="menu-item">Project</div>
+          <div class="menu-item">About</div>
+          <div class="menu-item">Contact</div>
+          <div class="menu-item">Certificate</div>
+        </div>
+        <img
+          class="nav-bar-phone-icon"
+          alt=""
+          src="./images/LOGO-removebg-preview (2).png"
+        />
+    </div>
+
+    <!-- Optional: Add JavaScript for form handling -->
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          // Add your form submission logic here
+          console.log("Form submitted");
+        });
+    </script>
+    <script src="./js/mobileMenu.js"></script>
+  </body>
+</html>

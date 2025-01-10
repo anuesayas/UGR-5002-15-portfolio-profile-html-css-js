@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="./style/about.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Preahvihear:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap"
+    />
+  </head>
+
+  <body>
+    <div class="desktop-about-me" id="desktopCertificate">
+      <div class="gradient"></div>
+      <img class="card-icon" alt="" src="./images/Rectangle 1 (3).png" />
+      <div class="about-me">About Me</div>
+      <div class="rectangle-parent">
+        <div class="group-child"></div>
+        <img class="vector-icon" alt="" src="./images/Vector (6).svg" />
+        <div class="rectangle">
+          <div class="hi-im-anat-container">
+            <span class="hi-im-anat-container1">
+              <p class="hi-im-anat">
+                Hi, I'm Anat, a software engineering student passionate about
+                using technology to solve real-world challenges. I specialize in
+                both front-end and back-end development, with a keen interest in
+                creating intuitive, user-friendly web applications.
+              </p>
+              <p class="hi-im-anat">
+                Currently, I'm exploring innovative projects like an Online
+                Blood Banking Management System, aiming to improve healthcare
+                accessibility through technology.
+              </p>
+            </span>
+          </div>
+          <div class="outside-of-my-container">
+            <span class="outside-of-my-container1">
+              <p class="outside-of-my">
+                Outside of my studies, I enjoy reading, learning new skills, and
+                discovering the endless possibilities of the internet.
+              </p>
+              <p class="outside-of-my">&nbsp;</p>
+              <p class="im-always-looking">
+                I'm always looking to collaborate on meaningful projects. Let's
+                connect!
+              </p>
+            </span>
+          </div>
+        </div>
+        <img
+          class="image-removebg-preview-1-3"
+          alt=""
+          src="./images/photo_2024-11-24_06-31-05-removebg-preview.png"
+        />
+      </div>
+      <div class="nav-bar">
+        <a href="./certificates.html">
+          <div class="certificate" id="certificateText">Certificate</div>
+        </a>
+        <a href="./projects.html">
+          <div class="project" id="projectText">Project</div>
+        </a>
+        <a href="#">
+          <div class="about" id="aboutText">About</div>
+        </a>
+        <a href="./contact.html">
+          <div class="contact" id="contactText">Contact</div>
+        </a>
+        <a href="./home.html">
+          <div class="home" id="homeText">Home</div>
+        </a>
+        <img
+          class="image-removebg-preview-1-icon"
+          alt=""
+          src="./images/LOGO-removebg-preview (2).png"
+          id="imageRemovebgPreview1"
+        />
+      </div>
+    </div>
+
+    <!-- Updated Phone Layout -->
+    <div class="phone-project-portrait">
+      <div class="gradient"></div>
+      <div class="about-me">About Me</div>
+      <img class="card-icon" alt="" src="./images/Rectangle 1 (3).png" />
+
+      <div class="rectangle-parent">
+        <div class = "about-me-container">
+          <div class="hi-im-anat-container">
+            <span class="hi-im-anat-container1">
+              <p class="hi-im-anat">Hi, I'm Anat, a software engineering student passionate about using technology to solve real-world challenges. I specialize in both front-end and back-end development, with a keen interest in creating intuitive, user-friendly web applications.</p>
+              <p class="hi-im-anat">Currently, I'm exploring innovative projects like an Online Blood Banking Management System, aiming to improve healthcare accessibility through technology.</p>
+            </span>
+          </div>
+          <div class="outside-of-my-container">
+            <span class="outside-of-my-container1">
+          <p class="outside-of-my">Outside of my studies, I enjoy reading, learning new skills, and discovering the endless possibilities of the internet.</p>
+          <p class="outside-of-my">&nbsp;</p>
+          <p class="outside-of-my"> I'm always looking to collaborate on meaningful projects. Let's connect!</p>
+            </span>
+          </div>
+        </div>
+        <div class="group-child">
+          
+        </div>
+        <img class="vector-icon" alt="" src="./images/Vector (6).svg" />
+
+        <img
+          class="image-removebg-preview-1-3"
+          alt=""
+          src="./images/photo_2024-11-24_06-31-05-removebg-preview.png"
+        />
+      </div>
+      <div class="menuvariant3-parent">
+        <img
+          class="menuvariant3-icon"
+          alt=""
+          src="./images/Variant3.svg"
+          id="menuVariant3Icon"
+        />
+        <div class="mobile-menu" id="mobileMenu">
+          <div class="menu-item">Home</div>
+          <div class="menu-item">Project</div>
+          <div class="menu-item">About</div>
+          <div class="menu-item">Contact</div>
+          <div class="menu-item">Certificate</div>
+        </div>
+        <img
+          class="nav-bar-phone-icon"
+          alt=""
+          src="./images/LOGO-removebg-preview (2).png"
+        />
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const desktopCertificate =
+          document.getElementById("desktopCertificate");
+        const phoneProjectPortrait = document.querySelector(
+          ".phone-project-portrait"
+        );
+
+        const handleResize = () => {
+          if (window.innerWidth <= 780) {
+            desktopCertificate.style.display = "none";
+            phoneProjectPortrait.style.display = "block";
+          } else {
+            desktopCertificate.style.display = "block";
+            phoneProjectPortrait.style.display = "none";
+          }
+        };
+
+        handleResize();
+        window.addEventListener("resize", handleResize);
+      });
+    </script>
+    <script src="./js/mobileMenu.js"></script>
+    <script>
+      var menuButton = document.getElementById("menuVariant3Icon");
+      var mobileMenu = document.getElementById("mobileMenu");
+
+      menuButton.addEventListener("click", function() {
+        mobileMenu.style.display = mobileMenu.style.display === "block" ? "none" : "block";
+      });
+
+      // Close menu when clicking outside
+      document.addEventListener("click", function(event) {
+        if (!menuButton.contains(event.target) && !mobileMenu.contains(event.target)) {
+          mobileMenu.style.display = "none";
+        }
+      });
+
+      // Handle menu item clicks
+      var menuItems = mobileMenu.querySelectorAll(".menu-item");
+      menuItems.forEach(function(item) {
+        item.addEventListener("click", function() {
+          mobileMenu.style.display = "none";
+          switch(item.textContent.trim()) {
+            case "Home":
+              window.location.href = "./index.html";
+              break;
+            case "Project":
+              window.location.href = "./projects.html";
+              break;
+            case "About":
+              window.location.href = "./about.html";
+              break;
+            case "Contact":
+              window.location.href = "./contact.html";
+              break;
+            case "Certificate":
+              window.location.href = "./certificates.html";
+              break;
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

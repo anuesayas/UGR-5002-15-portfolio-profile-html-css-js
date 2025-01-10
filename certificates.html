@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./style/certificates.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Preahvihear:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <!-- Desktop Layout -->
+    <div class="desktop-certificate" id="desktopCertificate">
+      <div class="certificate">Certificate</div>
+      <img class="cs50-1-icon" alt="" src="./images/cs50.png" />
+      <img
+        class="anatesayas-introduction-to-ce"
+        alt=""
+        src="./images/cisco.jpg"
+      />
+      <img class="itu-1-icon" alt="" src="./images/ITU.jpg" />
+
+      <!-- Navigation Bar -->
+      <div class="nav-bar">
+        <a href="./certificates.html">
+          <div class="certificate1" id="certificateText">Certificate</div>
+        </a>
+        <a href="./projects.html">
+          <div class="project" id="projectText">Project</div>
+        </a>
+        <a href="./about.html">
+          <div class="about" id="aboutText">About</div>
+        </a>
+        <a href="contact.html">
+          <div class="contact" id="contactText">Contact</div>
+        </a>
+        <a href="./home.html">
+          <div class="home" id="homeText">Home</div>
+        </a>
+        <img
+          class="image-removebg-preview-1-icon"
+          alt=""
+          src="./images/LOGO-removebg-preview (2).png"
+          id="imageRemovebgPreview1"
+        />
+      </div>
+      <img class="desktop-certificate-child" alt="" src="Group 32.svg" />
+    </div>
+
+    <!-- Mobile Layout -->
+    <div class="phone-certificate-portrait">
+      <div class="certificate">Certificate</div>
+      <img class="cs50-1-icon" alt="" src="./images/cs50.png" />
+      <img class="phone-certificate-portrait-child" alt="" src="Group 32.svg" />
+
+      <!-- Mobile Navigation -->
+      <div class="menuvariant3-parent">
+        <img
+          class="menuvariant3-icon"
+          alt=""
+          src="./images/Variant3.svg"
+          id="menuVariant3Icon"
+        />
+        <div class="mobile-menu" id="mobileMenu">
+          <a href="./home.html" class="menu-item">Home</a>
+          <a href="./projects.html" class="menu-item">Project</a>
+          <a href="./about.html" class="menu-item">About</a>
+          <a href="./contact.html" class="menu-item">Contact</a>
+          <a href="./certificates.html" class="menu-item">Certificate</a>
+        </div>
+        <img class="nav-bar-phone-icon" alt="" src="./images/LOGO-removebg-preview (2).png" />
+      </div>
+    </div>
+
+    <!-- Popup Menu for Mobile -->
+    <div id="frameContainer" class="popup-overlay">
+      <div class="menuvariant2-parent">
+        <img class="menuvariant2-icon" alt="" src="./images/Variant3.svg" />
+        <div class="frame-wrapper">
+          <div class="frame-1variant3-parent">
+            <a href="home.html" class="frame-1variant3">
+              <div class="menu-button">
+                <div class="menu-button1">Home</div>
+              </div>
+            </a>
+            <a href="./projects.html" class="frame-1variant3">
+              <div class="menu-button">
+                <div class="menu-button3">Project</div>
+              </div>
+            </a>
+            <a href="./about.html" class="frame-1variant3">
+              <div class="menu-button">
+                <div class="menu-button5">About</div>
+              </div>
+            </a>
+            <a href="./contact.html" class="frame-1variant3">
+              <div class="menu-button">
+                <div class="menu-button7">Contact</div>
+              </div>
+            </a>
+            <a href="certificates.html" class="frame-1variant3">
+              <div class="menu-button">
+                <div class="menu-button9">Certificate</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // JavaScript for Dynamic Responsiveness
+      document.addEventListener("DOMContentLoaded", () => {
+        const desktopCertificate =
+          document.getElementById("desktopCertificate");
+        const phoneCertificatePortrait = document.querySelector(
+          ".phone-certificate-portrait"
+        );
+
+        const handleResize = () => {
+          if (window.innerWidth <= 780) {
+            // Show mobile layout
+            desktopCertificate.style.display = "none";
+            phoneCertificatePortrait.style.display = "block";
+          } else {
+            // Show desktop layout
+            desktopCertificate.style.display = "block";
+            phoneCertificatePortrait.style.display = "none";
+          }
+        };
+
+        // Run on page load
+        handleResize();
+
+        // Add event listener for window resizing
+        window.addEventListener("resize", handleResize);
+      });
+    </script>
+    <script src="js/certificates.js"></script>
+  </body>
+</html>

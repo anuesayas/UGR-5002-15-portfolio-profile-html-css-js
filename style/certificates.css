@@ -1,0 +1,413 @@
+/* Default CSS (Desktop View) */
+#desktopCertificate {
+  display: block;
+}
+
+.phone-certificate-portrait {
+  display: none;
+}
+
+/* CSS for Mobile View (Max-width: 780px) */
+@media (max-width: 780px) {
+  #desktopCertificate {
+    display: none;
+  }
+
+  .phone-certificate-portrait {
+    display: block;
+  }
+}
+
+body {
+  margin: 0;
+  line-height: normal;
+}
+.certificate {
+  position: absolute;
+  top: 140px;
+  left: 607px;
+  letter-spacing: -0.5px;
+  line-height: 97px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 225px;
+}
+.cs50-1-icon {
+  position: absolute;
+  top: 327px;
+  left: 462px;
+  border-radius: 48px;
+  width: 515px;
+  height: 398px;
+  object-fit: cover;
+}
+.anatesayas-introduction-to-ce {
+  position: absolute;
+  top: 417px;
+  left: 116px;
+  border-radius: 10px;
+  width: 308px;
+  height: 218px;
+  object-fit: cover;
+}
+.itu-1-icon {
+  position: absolute;
+  top: 417px;
+  left: 1015px;
+  border-radius: 10px;
+  width: 307.2px;
+  height: 218px;
+  object-fit: cover;
+}
+.certificate1 {
+  position: absolute;
+  height: 23.21%;
+  width: 8.98%;
+  top: 43.75%;
+  left: 45.58%;
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+}
+.project {
+  position: absolute;
+  height: 23.21%;
+  width: 6.72%;
+  top: 43.75%;
+  left: 11.17%;
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+}
+.about {
+  position: absolute;
+  height: 23.21%;
+  width: 7.4%;
+  top: 43.75%;
+  left: 22.34%;
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+}
+.contact {
+  position: absolute;
+  height: 23.21%;
+  width: 6.94%;
+  top: 43.75%;
+  left: 34.19%;
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+}
+.home {
+  position: absolute;
+  height: 23.21%;
+  width: 6.72%;
+  top: 43.75%;
+  left: 0%;
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+}
+.image-removebg-preview-1-icon {
+  position: absolute;
+  height: 100%;
+  width: 22.79%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  left: 77.21%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+.nav-bar {
+  position: absolute;
+  top: 0px;
+  left: 70px;
+  width: 1325px;
+  height: 112px;
+  text-align: left;
+  font-size: 24px;
+  font-family: Raleway;
+}
+.desktop-certificate-child {
+  position: absolute;
+  top: 815px;
+  left: 686px;
+  width: 68px;
+  height: 8px;
+}
+.desktop-certificate {
+  width: 100%;
+  position: relative;
+  background-color: #1a0b2e;
+  height: 1024px;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: center;
+  font-size: 40px;
+  color: #fff;
+  font-family: Preahvihear;
+}
+@media screen and (max-width: 780px) {
+  .certificate {
+    position: absolute;
+    top: 130px;
+    left: calc(50% - 68.5px);
+    letter-spacing: -0.5px;
+    line-height: 97px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 138px;
+    height: 52px;
+  }
+  .cs50-1-icon {
+    position: absolute;
+    top: 280px;
+    left: calc(50% - 171.5px);
+    border-radius: 3px;
+    width: 343px;
+    height: 265px;
+    object-fit: cover;
+  }
+  .phone-certificate-portrait-child {
+    position: absolute;
+    top: 588px;
+    left: 163px;
+    width: 68px;
+    height: 8px;
+  }
+  .menuvariant3-icon {
+    width: 24px;
+    position: relative;
+    height: 24px;
+  }
+  .nav-bar-phone-icon {
+    width: 151px;
+    position: relative;
+    height: 56px;
+    object-fit: cover;
+  }
+  .menuvariant3-parent {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(26, 11, 46, 0.95);
+    z-index: 100;
+  }
+  .phone-certificate-portrait {
+    width: 100%;
+    position: relative;
+    background-color: #1a0b2e;
+    height: 852px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    font-family: Preahvihear;
+  }
+
+  .menuvariant2-icon {
+    width: 24px;
+    position: relative;
+    height: 24px;
+  }
+  .menu-button1 {
+    position: absolute;
+    top: 0%;
+    left: 28.75%;
+  }
+  .menu-button {
+    width: 80px;
+    position: relative;
+    height: 22px;
+  }
+  .frame-1variant3 {
+    align-self: stretch;
+    background-color: rgba(26, 11, 46, 0.8);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .menu-button3 {
+    position: absolute;
+    top: 0%;
+    left: 21.25%;
+  }
+  .menu-button5 {
+    position: absolute;
+    top: 0%;
+    left: 26.25%;
+  }
+  .menu-button7 {
+    position: absolute;
+    top: 0%;
+    left: 18.75%;
+  }
+  .menu-button9 {
+    position: absolute;
+    top: 0%;
+    left: 7.5%;
+  }
+  .frame-1variant3-parent {
+    width: 154px;
+    background: linear-gradient(
+      169.64deg,
+      rgba(26, 11, 46, 0.32) 23.78%,
+      rgba(49, 21, 87, 0.35) 40.13%,
+      rgba(55, 23, 97, 0.36) 53.1%,
+      rgba(84, 35, 148, 0.4) 74%
+    );
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 9px 10px;
+    box-sizing: border-box;
+    gap: 5px;
+  }
+  .frame-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+  .menuvariant2-parent {
+    width: 154px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 90%;
+    max-height: 90%;
+    overflow: auto;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    font-family: Preahvihear;
+  }
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: flex-start;
+  align-items: flex-start;
+  z-index: 1000;
+}
+
+.menuvariant2-parent {
+  background: rgba(26, 11, 46, 0.95);
+  padding: 20px;
+  border-radius: 0 0 10px 0;
+}
+
+.frame-1variant3 {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  display: block;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.frame-1variant3:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.menuvariant3-icon {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+
+.menuvariant2-icon {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  margin-bottom: 15px;
+}
+
+.menu-button {
+  color: #fff;
+  font-family: Preahvihear;
+  font-size: 16px;
+}
+
+.menuvariant3-parent {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(26, 11, 46, 0.95);
+  z-index: 100;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 49px;
+  left: 0;
+  width: 200px;
+  background: linear-gradient(
+    169.64deg,
+    rgba(26, 11, 46, 0.92) 23.78%,
+    rgba(49, 21, 87, 0.95) 40.13%,
+    rgba(55, 23, 97, 0.96) 53.1%,
+    rgba(84, 35, 148, 1) 74%
+  );
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.mobile-menu.active {
+  display: block;
+}
+
+.menu-item {
+  color: white;
+  padding: 12px 20px;
+  text-align: center;
+  font-family: 'Preahvihear', sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 4px;
+  display: block;
+  text-decoration: none;
+}
+
+.menu-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media screen and (min-width: 781px) {
+  .menuvariant3-parent {
+    display: none;
+  }
+}
